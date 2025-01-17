@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0 0 0 ;
+    }
+  
+    #x{ 
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+  .a{
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  </style>
+</head>
+<body>
+   <u> <h1>TIMER</h1></u>
+  <div id="x"> 
+  
+    <input class="a" type="text" id="hours" size="3" readonly><pre> : </pre>
+    <input class="a" type="text" id="minutes" size="3"  readonly><pre> : </pre>
+    <input class="a" type="text" id="seconds" size="3" readonly><pre>  </pre>
+
+
+  </div>
+  <br>
+  <div id="home">
+    <a href="index.html" style="font-size: larger;color: red;">Home</a>
+</div>
+
+  <script>
+    function presentTime() {
+      const now=new Date();
+      const hours=String(now.getHours()).padStart(2,'0');
+      const minutes=String(now.getMinutes()).padStart(2, '0');
+      const seconds=String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('hours').value=hours;
+      document.getElementById('minutes').value=minutes;
+      document.getElementById('seconds').value=seconds;
+      
+    }
+    setInterval(presentTime, 1000);
+    presentTime();
+  </script>
+</body>
+</html>
