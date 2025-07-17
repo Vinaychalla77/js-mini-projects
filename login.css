@@ -1,0 +1,72 @@
+body{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 70vh;
+   background-color:bisque;
+}
+.loginform{
+   margin-top: 20px;
+   display: flex;
+flex-direction: column;
+   gap: 15px;
+   
+}
+.loginform label{
+font-size: 1.5rem;
+width: 120px;
+
+}
+
+.logindetails{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  margin-bottom: 5px;
+  
+}
+
+.user-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-wrapper input{
+    padding:5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.user-wrapper small{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+.logbutt{
+    display: flex;
+    justify-content: center;
+    padding-left: 55px;
+}
+
+.loginbutton{
+    color: white;
+    background-color: red;
+    display: inline-block;
+    border-radius: 4px;
+    
+}
+.newuser{
+    font-size: 1rem;
+    padding-top: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+.newregisbutt{
+    color: white;
+    background-color:rgb(68, 147, 197);
+    font-size: 1rem;
+    border-radius: 4px; 
+}

@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding-top: 200px;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bolder;
-            font-size: larger;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome page</title>
+  <link rel="stylesheet" href="./login.css">
 </head>
+
 <body>
-    <a href="color.html">color changer</a>
-    <a href="hu vs mac.html">human vs machine</a>
-    <a href="time.html">timer</a>
-    <a href="calculator.html">calculator</a>
-    <a href="counter.html">counter</a>
+
+  <main class="maindiv">
+    <form class="loginform">
+      <div class="logindetails">
+        <label for="UserEmail">Email:</label>
+        <div class="user-wrapper">
+          <input type="email" id="UserEmail" data-key="UserEmail" placeholder="Email">
+          <small class="invalidmsg"></small>
+        </div>
+      </div>
+
+      <div class="logindetails">
+        <label for="Userpass">Password:</label>
+        <div class="user-wrapper">
+          <input type="password" id="Userpass" data-key="PassEmail" placeholder="password">
+          <small class="invalidmsg"></small>
+
+        </div>
+      </div>
+      <div class="logbutt">
+        <button class="loginbutton">LOGIN</button>
+      </div>
+
+      <div class="newuser">
+        New user click here->>> 
+
+        <button class="newregisbutt">Register Here</button>
+
+      </div>
+
+
+    </form>
+
+  </main>
+  <script src="./login.js"></script>
 </body>
+
 </html>

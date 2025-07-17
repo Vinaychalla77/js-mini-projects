@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome User</title>
+  <style>
+    body{
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="welcomeMsg"></h1>
+
+  <script>
+    const currentUser = JSON.parse(localStorage.getItem("currentuser"));
+
+    if (currentUser && currentUser.FirstName && currentUser.LastName) {
+      document.getElementById("welcomeMsg").textContent = 
+        `Welcome, ${currentUser.FirstName} ${currentUser.LastName}!`;
+    } else {
+      document.getElementById("welcomeMsg").textContent = "Welcome, Guest!";
+    }
+  </script>
+</body>
+</html>

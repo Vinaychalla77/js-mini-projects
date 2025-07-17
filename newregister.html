@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Layout</title>
+    <link rel="stylesheet" href="./newregi.css">
+</head>
+
+<body>
+    <main class="parent">
+        <h2 id="welcomemsg"></h2>
+        <section class="mainform">
+            <form class="todoform">
+
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="FirstName" class="FirstName" data-key="FirstName"
+                            placeholder="First Name">
+                        <small class="error-msg"></small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="LastName">Last Name:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="LastName" class="LastName" data-key="LastName" placeholder="Last Name">
+                        <small class="error-msg"></small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="Email" class="Email" data-key="Email" placeholder="Email">
+                        <small class="error-msg"></small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Password">Password:</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="Password" class="Password" data-key="Password"
+                            placeholder="Password">
+                        <small class="error-msg"></small>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="butt">Submit</button>
+                </div>
+            </form>
+            <div class="output"></div>
+        </section>
+    </main>
+
+    <script src="./newregi.js"></script>
+    <script>
+        localStorage.setItem("currentuser", JSON.stringify(formlist));
+
+    </script>
+
+</body>
+
+</html>
